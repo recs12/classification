@@ -1,0 +1,236 @@
+<!--Generated through ICS XML Export Utility; Rechdi, Slimane; Tue Mar 23 16:21:55 2021-->
+<InClassAdminPackage xmlns="http://www.ugs.com/in-CLASS/1.0"
+  xmlns:plm="http://www.plmxml.org/Schemas/PLMXMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ugs.com/in-CLASS/1.0 F:\TC_Software\Teamcenter12\reference_files\PLMXML\schemas\EDS\in-class.xsd">
+  <KeyLOV keyLOVId="-1234" options="0">
+    <Name>Suppliers</Name>
+    <Values>
+      <Key>1</Key>
+      <Value>Bisbil</Value>
+    </Values>
+    <Values>
+      <Key>2</Key>
+      <Value>Ramono</Value>
+    </Values>
+    <Values>
+      <Key>3</Key>
+      <Value>Bitonio</Value>
+    </Values>
+    <Values>
+      <Key>4</Key>
+      <Value>Ariol</Value>
+    </Values>
+  </KeyLOV>
+  <ICSDictionaryAttribute attributeId="1234567893">
+    <Name>Suppliers</Name>
+    <Annotation></Annotation>
+    <Format>
+      <ICSFormatKeyLov>-1234</ICSFormatKeyLov>
+    </Format>
+    <Description></Description>
+    <Comment></Comment>
+  </ICSDictionaryAttribute>
+  <ICSDictionaryAttribute attributeId="1234567891">
+    <Name>Height</Name>
+    <Annotation></Annotation>
+    <Format>
+      <ICSFormatString scale="8"/>
+    </Format>
+    <Description></Description>
+    <Comment></Comment>
+  </ICSDictionaryAttribute>
+  <ICSDictionaryAttribute attributeId="1234567892">
+    <Name>Width</Name>
+    <Annotation></Annotation>
+    <Format>
+      <ICSFormatString scale="83"/>
+    </Format>
+    <Description></Description>
+    <Comment></Comment>
+  </ICSDictionaryAttribute>
+  <ClassPackage classId="ICM">
+    <ICSClass abstract="true" isGroup="true" unitSystem="metric">
+      <Parent>SAM</Parent>
+      <Name>Classification Root</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM01">
+    <ICSClass abstract="true" isGroup="true" unitSystem="metric">
+      <Parent>ICM</Parent>
+      <Name>PT_Classification</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM0101">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM01</Parent>
+      <Name>Designed Parts</Name>
+      <Attribute attributeId="1234567893" dbIndex="1"/>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM0102">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM01</Parent>
+      <Name>Purchased Parts</Name>
+      <Attribute attributeId="1234567893" dbIndex="1"/>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM0103">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM01</Parent>
+      <Name>Raw Materials</Name>
+      <Attribute attributeId="1234567893" dbIndex="1"/>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010101">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0101</Parent>
+      <Name>Common assemblies</Name>
+      <Attribute attributeId="1234567891" dbIndex="0" isReference="true"/>
+      <Attribute attributeId="1234567892" dbIndex="0" isReference="true"/>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010102">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0101</Parent>
+      <Name>Conveyors</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010103">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0101</Parent>
+      <Name>Chutes</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010104">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0101</Parent>
+      <Name>Structures</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010105">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0101</Parent>
+      <Name>Brackets</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010201">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Building</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010202">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Electrical &amp; Lighting</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010203">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Fastening</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010204">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Filtering</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010205">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Flow &amp; Level Control</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010206">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Hardware</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010207">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Heating &amp; Cooling</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010208">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Joining and Holding</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010209">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Lubricating</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010210">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Material Handling</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010211">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Pipe, Tubing, Hose &amp; Fittings</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010212">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Power &amp; Motion</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010213">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Motion Transmission</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010214">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Pressure &amp; Temperature Control</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010215">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Pulling &amp; Lifting</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010216">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Safety &amp; Signs</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010217">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0102</Parent>
+      <Name>Sealing</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010301">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0103</Parent>
+      <Name>Metals</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010302">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0103</Parent>
+      <Name>Plastics &amp; rubbers</Name>
+    </ICSClass>
+  </ClassPackage>
+  <ClassPackage classId="ICM010303">
+    <ICSClass abstract="true" unitSystem="metric">
+      <Parent>ICM0103</Parent>
+      <Name>Others</Name>
+    </ICSClass>
+  </ClassPackage>
+</InClassAdminPackage>

@@ -1,0 +1,374 @@
+{
+    "#comment": "Generated through ICS XML Export Utility; Rechdi, Slimane; Tue Mar 23 16:21:55 2021",
+    "InClassAdminPackage": {
+        "-xmlns": "http://www.ugs.com/in-CLASS/1.0",
+        "-xmlns:plm": "http://www.plmxml.org/Schemas/PLMXMLSchema",
+        "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "-xsi:schemaLocation": "http://www.ugs.com/in-CLASS/1.0 F:\\TC_Software\\Teamcenter12\\reference_files\\PLMXML\\schemas\\EDS\\in-class.xsd",
+        "KeyLOV": {
+            "-keyLOVId": "-1234",
+            "-options": "0",
+            "Name": "Suppliers",
+            "Values": [
+                {
+                    "Key": "1",
+                    "Value": "Bisbil"
+                },
+                {
+                    "Key": "2",
+                    "Value": "Ramono"
+                },
+                {
+                    "Key": "3",
+                    "Value": "Bitonio"
+                },
+                {
+                    "Key": "4",
+                    "Value": "Ariol"
+                }
+            ]
+        },
+        "ICSDictionaryAttribute": [
+            {
+                "-attributeId": "1234567893",
+                "Name": "Suppliers",
+                "Annotation": {},
+                "Format": {
+                    "ICSFormatKeyLov": "-1234"
+                },
+                "Description": {},
+                "Comment": {}
+            },
+            {
+                "-attributeId": "1234567891",
+                "Name": "Height",
+                "Annotation": {},
+                "Format": {
+                    "ICSFormatString": {
+                        "-scale": "8",
+                        "-self-closing": "true"
+                    }
+                },
+                "Description": {},
+                "Comment": {}
+            },
+            {
+                "-attributeId": "1234567892",
+                "Name": "Width",
+                "Annotation": {},
+                "Format": {
+                    "ICSFormatString": {
+                        "-scale": "83",
+                        "-self-closing": "true"
+                    }
+                },
+                "Description": {},
+                "Comment": {}
+            }
+        ],
+        "ClassPackage": [
+            {
+                "-classId": "ICM",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-isGroup": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "SAM",
+                    "Name": "Classification Root"
+                }
+            },
+            {
+                "-classId": "ICM01",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-isGroup": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM",
+                    "Name": "PT_Classification"
+                }
+            },
+            {
+                "-classId": "ICM0101",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM01",
+                    "Name": "Designed Parts",
+                    "Attribute": {
+                        "-attributeId": "1234567893",
+                        "-dbIndex": "1",
+                        "-self-closing": "true"
+                    }
+                }
+            },
+            {
+                "-classId": "ICM0102",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM01",
+                    "Name": "Purchased Parts",
+                    "Attribute": {
+                        "-attributeId": "1234567893",
+                        "-dbIndex": "1",
+                        "-self-closing": "true"
+                    }
+                }
+            },
+            {
+                "-classId": "ICM0103",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM01",
+                    "Name": "Raw Materials",
+                    "Attribute": {
+                        "-attributeId": "1234567893",
+                        "-dbIndex": "1",
+                        "-self-closing": "true"
+                    }
+                }
+            },
+            {
+                "-classId": "ICM010101",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0101",
+                    "Name": "Common assemblies",
+                    "Attribute": [
+                        {
+                            "-attributeId": "1234567891",
+                            "-dbIndex": "0",
+                            "-isReference": "true",
+                            "-self-closing": "true"
+                        },
+                        {
+                            "-attributeId": "1234567892",
+                            "-dbIndex": "0",
+                            "-isReference": "true",
+                            "-self-closing": "true"
+                        }
+                    ]
+                }
+            },
+            {
+                "-classId": "ICM010102",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0101",
+                    "Name": "Conveyors"
+                }
+            },
+            {
+                "-classId": "ICM010103",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0101",
+                    "Name": "Chutes"
+                }
+            },
+            {
+                "-classId": "ICM010104",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0101",
+                    "Name": "Structures"
+                }
+            },
+            {
+                "-classId": "ICM010105",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0101",
+                    "Name": "Brackets"
+                }
+            },
+            {
+                "-classId": "ICM010201",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Building"
+                }
+            },
+            {
+                "-classId": "ICM010202",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Electrical & Lighting"
+                }
+            },
+            {
+                "-classId": "ICM010203",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Fastening"
+                }
+            },
+            {
+                "-classId": "ICM010204",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Filtering"
+                }
+            },
+            {
+                "-classId": "ICM010205",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Flow & Level Control"
+                }
+            },
+            {
+                "-classId": "ICM010206",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Hardware"
+                }
+            },
+            {
+                "-classId": "ICM010207",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Heating & Cooling"
+                }
+            },
+            {
+                "-classId": "ICM010208",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Joining and Holding"
+                }
+            },
+            {
+                "-classId": "ICM010209",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Lubricating"
+                }
+            },
+            {
+                "-classId": "ICM010210",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Material Handling"
+                }
+            },
+            {
+                "-classId": "ICM010211",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Pipe, Tubing, Hose & Fittings"
+                }
+            },
+            {
+                "-classId": "ICM010212",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Power & Motion"
+                }
+            },
+            {
+                "-classId": "ICM010213",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Motion Transmission"
+                }
+            },
+            {
+                "-classId": "ICM010214",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Pressure & Temperature Control"
+                }
+            },
+            {
+                "-classId": "ICM010215",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Pulling & Lifting"
+                }
+            },
+            {
+                "-classId": "ICM010216",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Safety & Signs"
+                }
+            },
+            {
+                "-classId": "ICM010217",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0102",
+                    "Name": "Sealing"
+                }
+            },
+            {
+                "-classId": "ICM010301",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0103",
+                    "Name": "Metals"
+                }
+            },
+            {
+                "-classId": "ICM010302",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0103",
+                    "Name": "Plastics & rubbers"
+                }
+            },
+            {
+                "-classId": "ICM010303",
+                "ICSClass": {
+                    "-abstract": "true",
+                    "-unitSystem": "metric",
+                    "Parent": "ICM0103",
+                    "Name": "Others"
+                }
+            }
+        ]
+    },
+    "#omit-xml-declaration": "yes"
+}
